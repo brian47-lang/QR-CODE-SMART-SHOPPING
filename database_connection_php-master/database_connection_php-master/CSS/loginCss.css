@@ -1,0 +1,213 @@
+* {
+	box-sizing:border-box;
+	margin:10px;
+}
+html {
+	height:100%;
+}
+body{
+	
+	background-color: #E5EFED;
+	min-height: 100vh;
+	display:flex;
+	flex-direction: column;
+}
+header {
+	display:flex;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 20px;
+	background-color: rgb(0, 0, 0);
+	color:bisque;
+	flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+header h1{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: bold;
+	font-size:50px;
+	padding-left: 0px;
+	text-shadow:5px 5px 10px #1bc2a0;
+	
+}
+
+header button{
+	justify-content: space-between;
+	background-color: #1BD1AD;
+	margin-left: 40px;
+	border: none;
+	border-radius: 50px;
+	cursor:pointer;
+	font-weight:900;
+	font-size: larger;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+	padding: 15px 15px;
+	transition: all 0.3s ease 0s;
+}
+header button:hover {
+	background-color: #1a8a73;
+}
+.br{
+	background-color: rgb(138, 148, 147);
+	height:5px;
+	border-radius: 5px;
+}
+
+
+.loginbox{
+    width: 360px;
+    height:520px;
+    background-color: #26806e;
+    align-items: center;
+    margin:auto;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    display: flex;
+}
+.loginbox h2{
+    text-align: center;
+
+      font-weight: bold;
+   margin-bottom: 20px;
+}
+.loginbox form{
+   width:300px;
+   margin-left: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.loginbox form label{
+    display:flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.loginbox form input{
+    width:100%;
+    padding:7px;
+    padding-right: 5px;
+    border:none;
+    border: 1px solid #17caa7;
+    outline: none;
+}
+.loginbox button{
+    width:300px;
+    border:none;
+    background-color: #000000;
+    color: #17caa7;
+    height:40px;
+    border-radius: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    transition: all 0.3s ease 0s;
+    cursor:pointer;
+
+}
+.loginbox button:hover {
+	background-color: #450caf;
+}
+.loginbox a{
+    text-decoration: none;
+    color:#000000;
+    transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;
+}
+.loginbox a:hover{
+color:#ffffff;
+}
+
+footer{
+	
+	background-color: black;
+	position:sticky;
+	top:100%;
+	color:white;
+	height: 60px;
+    border-radius: 10px;
+}
+footer h4,h5 {
+	text-align:  center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	
+}
+
+/* signup form css */
+
+.signupbox{
+
+    width: 350px;
+    height:600px;
+    background-color: #26806e;
+    align-items: center;
+    margin:auto;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+text-align: center;
+
+
+}
+.signupbox  h2{
+    text-align: center;
+
+      font-weight: bold;
+   margin-bottom: 20px;
+}
+
+.signupbox form{
+    width:300px;
+    margin-left: 20px;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight: bold;
+     padding-top: 10px;
+ }
+ .signupbox form label{
+   
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.signupbox form input{
+
+    border:none;
+    border: 1px solid #17caa7;
+    outline: none;
+}
+#submitbtn{
+    width:300px;
+    border:none;
+    background-color: #000000;
+    color: #17caa7;
+    height:40px;
+    border-radius: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    transition: all 0.3s ease 0s;
+    cursor:pointer;
+    
+}
+#submitbtn:hover{
+    background-color: #851dd4;
+}
+.signupbox a{
+    text-decoration: none;
+    color:#000000;
+    transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;
+}
+.signupbox a:hover{
+    color:#ffffff;
+    }
+    footer{
+        border-radius: 15px;
+        background-color: black;
+        position:sticky;
+        top:100%;
+        color:white;
+        height: 120px;
+    }
+    footer h4,h5,h6 {
+        text-align:  center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+    }

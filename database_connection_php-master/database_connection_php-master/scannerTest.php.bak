@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Instascan</title>
+    <script type="text/javascript" src="instascan.min.js"></script>
+  </head>
+  <body>
+    <video id="preview" width = "200"></video>
+	<br>
+		<input type = "text" id = "text-el" placeholder = "scan qrcode">
+		<br>
+		<span id = "content-el"></span>
+		<br>
+		<p>SHOPING CART</p>
+		<ul id = "shopcart-el">items will display here<ul>
+		<br>
+    <script type="text/javascript">
+      let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+      scanner.addListener('scan', function (content) {
+		let list = document.getElementById("shopcart-el")
+		  list.innerHTML += "<li>" + content + "</li>"
+		 
+      });
+      Instascan.Camera.getCameras().then(function (cameras) {
+        if (cameras.length > 0) {
+          scanner.start(cameras[0]);
+        } else {
+          console.error('No cameras found.');
+        }
+      }).catch(function (e) {
+        console.error(e);
+      });
+	  
+	
+    </script>
+  </body>
+</html>
+ 
